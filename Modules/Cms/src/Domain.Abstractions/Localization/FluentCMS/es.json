@@ -1,0 +1,26 @@
+{
+  "culture": "es",
+  "texts": {
+    "Permission:Create": "Crear",
+    "Permission:Edit": "Editar",
+    "Permission:Delete": "Eliminar",
+    "Permission:FluentCMS:SiteContent:Content": "Contenido del sitio",
+    "Permission:FluentCMS": "FluentCMS",
+    "Permission:FluentCMS:SiteContent:Blocks": "Bloques de contenido",
+    "Permission:FluentCMS:SiteContent:ContentTypes": "Tipos de contenido",
+    "Permission:FluentCMS:SiteContent:ContentTypeFields": "Campos del tipo de contenido",
+    "Permission:FluentCMS:SiteContent:Layouts": "Diseños",
+    "Permission:FluentCMS:SiteContent:Pages": "Páginas",
+    "Permission:FluentCMS:SiteContent:Sites": "Sitios",
+    "Permission:FluentCMS:ApiTokens:ApiToken": "Token de API",
+    "Permission:FluentCMS:IO:Files": "Archivos",
+    "Permission:FluentCMS:IO:Folders": "Carpetas",
+    "Permission:FluentCMS:Plugins:Plugin": "Complementos",
+    "Permission:FluentCMS:Plugins:PluginContents": "Contenido de complementos",
+    "Permission:FluentCMS:Settings:GlobalSettings": "Configuración global",
+    "Permission:FluentCMS:Settings:TenantSettings": "Configuración del inquilino",
+    "Permission:FluentCMS:Membership:Members": "Miembros",
+    "Permission:FluentCMS:Membership:Roles": "Roles",
+    "Permission:ResetPassword": "Restablecer contraseña"
+  }
+}

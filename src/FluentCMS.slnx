@@ -32,6 +32,23 @@
     <Project Path="Frontend/Plugins/FluentCMS.Web.Plugins.RichText/FluentCMS.Web.Plugins.RichText.csproj" />
     <Project Path="Frontend/Plugins/FluentCMS.Web.Plugins.TextHTML/FluentCMS.Web.Plugins.TextHTML.csproj" />
   </Folder>
+  <Folder Name="/Modules/" />
+  <Folder Name="/Modules/Cms/">
+    <Project Path="../Modules/Cms/src/Application.Abstractions/Cms.Application.Abstractions.csproj" />
+    <Project Path="../Modules/Cms/src/Application/Cms.Application.csproj" />
+    <Project Path="../Modules/Cms/src/Domain.Abstractions/Cms.Domain.Abstractions.csproj" />
+    <Project Path="../Modules/Cms/src/Domain.Context/Cms.Domain.Context.csproj" />
+    <Project Path="../Modules/Cms/src/Domain/Cms.Domain.csproj" />
+    <Project Path="../Modules/Cms/src/HttpApi.Client/Cms.HttpApi.Client.csproj" />
+    <Project Path="../Modules/Cms/src/HttpApi/Cms.HttpApi.csproj" />
+  </Folder>
+  <Folder Name="/Modules/Cms/Tests/">
+    <Project Path="../Modules/Cms/test/Application.Tests/Cms.Application.Tests.csproj" />
+    <Project Path="../Modules/Cms/test/Domain.Context.Tests/Cms.Domain.Context.Tests.csproj" />
+    <Project Path="../Modules/Cms/test/Domain.Tests/Cms.Domain.Tests.csproj" />
+    <Project Path="../Modules/Cms/test/HttpApi.Tests/Cms.HttpApi.Tests.csproj" />
+    <Project Path="../Modules/Cms/test/TestBase/Cms.TestBase.csproj" />
+  </Folder>
   <Folder Name="/Providers/" />
   <Folder Name="/Providers/ApiTokenProviders/">
     <Project Path="Providers/ApiTokenProviders/FluentCMS.Providers.ApiTokenProviders.Abstractions/FluentCMS.Providers.ApiTokenProviders.Abstractions.csproj" />
@@ -57,6 +74,6 @@
     <Project Path="Providers/TemplateRenderingProviders/FluentCMS.Providers.TemplateRenderingProviders.Abstractions/FluentCMS.Providers.TemplateRenderingProviders.Abstractions.csproj" />
     <Project Path="Providers/TemplateRenderingProviders/FluentCMS.Providers.TemplateRenderingProviders/FluentCMS.Providers.TemplateRenderingProviders.csproj" />
   </Folder>
-  <Project Path="FluentCMS/FluentCMS.csproj" />
   <Project Path="FluentCMS.Shared/FluentCMS.Shared.csproj" />
+  <Project Path="FluentCMS/FluentCMS.csproj" />
 </Solution>

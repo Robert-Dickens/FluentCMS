@@ -1,0 +1,26 @@
+{
+  "culture": "sk",
+  "texts": {
+    "Permission:Create": "Vytvoriť",
+    "Permission:Edit": "Upraviť",
+    "Permission:Delete": "Odstrániť",
+    "Permission:FluentCMS:SiteContent:Content": "Obsah stránky",
+    "Permission:FluentCMS": "FluentCMS",
+    "Permission:FluentCMS:SiteContent:Blocks": "Bloky obsahu",
+    "Permission:FluentCMS:SiteContent:ContentTypes": "Typy obsahu",
+    "Permission:FluentCMS:SiteContent:ContentTypeFields": "Polia typu obsahu",
+    "Permission:FluentCMS:SiteContent:Layouts": "Rozloženia",
+    "Permission:FluentCMS:SiteContent:Pages": "Stránky",
+    "Permission:FluentCMS:SiteContent:Sites": "Weby",
+    "Permission:FluentCMS:ApiTokens:ApiToken": "API token",
+    "Permission:FluentCMS:IO:Files": "Súbory",
+    "Permission:FluentCMS:IO:Folders": "Priečinky",
+    "Permission:FluentCMS:Plugins:Plugin": "Pluginy",
+    "Permission:FluentCMS:Plugins:PluginContents": "Obsah pluginov",
+    "Permission:FluentCMS:Settings:GlobalSettings": "Globálne nastavenia",
+    "Permission:FluentCMS:Settings:TenantSettings": "Nastavenia nájomcu",
+    "Permission:FluentCMS:Membership:Members": "Členovia",
+    "Permission:FluentCMS:Membership:Roles": "Roly",
+    "Permission:ResetPassword": "Obnoviť heslo"
+  }
+}

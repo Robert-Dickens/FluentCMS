@@ -1,0 +1,26 @@
+{
+  "culture": "ru",
+  "texts": {
+    "Permission:Create": "Создать",
+    "Permission:Edit": "Изменить",
+    "Permission:Delete": "Удалить",
+    "Permission:FluentCMS:SiteContent:Content": "Содержимое сайта",
+    "Permission:FluentCMS": "FluentCMS",
+    "Permission:FluentCMS:SiteContent:Blocks": "Блоки контента",
+    "Permission:FluentCMS:SiteContent:ContentTypes": "Типы контента",
+    "Permission:FluentCMS:SiteContent:ContentTypeFields": "Поля типа контента",
+    "Permission:FluentCMS:SiteContent:Layouts": "Макеты",
+    "Permission:FluentCMS:SiteContent:Pages": "Страницы",
+    "Permission:FluentCMS:SiteContent:Sites": "Сайты",
+    "Permission:FluentCMS:ApiTokens:ApiToken": "Токен API",
+    "Permission:FluentCMS:IO:Files": "Файлы",
+    "Permission:FluentCMS:IO:Folders": "Папки",
+    "Permission:FluentCMS:Plugins:Plugin": "Плагины",
+    "Permission:FluentCMS:Plugins:PluginContents": "Содержимое плагинов",
+    "Permission:FluentCMS:Settings:GlobalSettings": "Глобальные настройки",
+    "Permission:FluentCMS:Settings:TenantSettings": "Настройки арендатора",
+    "Permission:FluentCMS:Membership:Members": "Участники",
+    "Permission:FluentCMS:Membership:Roles": "Роли",
+    "Permission:ResetPassword": "Сбросить пароль"
+  }
+}

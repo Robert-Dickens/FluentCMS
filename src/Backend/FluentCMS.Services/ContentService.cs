@@ -2,7 +2,7 @@
 
 public interface IContentService : IAutoRegisterService
 {
-    Task<IEnumerable<Content>> GetAll(Guid contentTypeId, CancellationToken cancellationToken = default);
+    Task<IEnumerable<Content>> GetAllByContentType(Guid contentTypeId, CancellationToken cancellationToken = default);
     Task<Content> Create(Content content, CancellationToken cancellationToken = default);
     Task<Content> Delete(Guid id, CancellationToken cancellationToken = default);
     Task<Content> GetById(Guid id, CancellationToken cancellationToken = default);
@@ -11,7 +11,7 @@ public interface IContentService : IAutoRegisterService
 
 public class ContentService(IContentRepository contentRepository, IMessagePublisher messagePublisher) : IContentService
 {
-    public async Task<IEnumerable<Content>> GetAll(Guid contentTypeId, CancellationToken cancellationToken = default)
+    public async Task<IEnumerable<Content>> GetAllByContentType(Guid contentTypeId, CancellationToken cancellationToken = default)
     {
         return await contentRepository.GetAll(contentTypeId, cancellationToken);
     }

@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>$(DefaultNetCoreTargetFramework)</TargetFrameworks>
+		<IsPackable>false</IsPackable>
+		<RootNamespace>FluentCMS.Domain</RootNamespace>
+		<AssemblyName>ByteLabs.FluentCMS.$(MSBuildProjectName)</AssemblyName>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="ByteLabs.Foundations.DataFactory.EntityFrameworkCore" />
+		<PackageReference Include="ByteLabs.PlatformServices.Users.Domain.Context" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Domain\Cms.Domain.csproj" />
+	</ItemGroup>
+
+</Project>

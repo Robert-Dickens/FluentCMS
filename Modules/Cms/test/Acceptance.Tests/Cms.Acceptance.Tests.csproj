@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="../common.test.xunit.props" />
+	
+	<PropertyGroup>
+		<RootNamespace>FluentCMS</RootNamespace>
+		<AssemblyName>ByteLabs.FluentCMS.$(MSBuildProjectName)</AssemblyName>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Configuration.Binder" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Json" />
+		<PackageReference Include="Microsoft.Extensions.Options" />
+		<PackageReference Include="Microsoft.Playwright" />
+		<PackageReference Include="Microsoft.Playwright.XUnit" />
+		<PackageReference Include="Microsoft.Playwright.TestAdapter" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <!--<ProjectReference Include="..\..\src\Blazor\Cms.Blazor.csproj" />-->
+	  <ProjectReference Include="..\Domain.Context.Tests\Cms.Domain.Context.Tests.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="Settings\AppSettings.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+
+</Project>

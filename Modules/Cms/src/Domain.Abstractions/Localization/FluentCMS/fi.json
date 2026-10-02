@@ -1,0 +1,26 @@
+{
+  "culture": "fi",
+  "texts": {
+    "Permission:Create": "Luo",
+    "Permission:Edit": "Muokkaa",
+    "Permission:Delete": "Poista",
+    "Permission:FluentCMS:SiteContent:Content": "Sivuston sisältö",
+    "Permission:FluentCMS": "FluentCMS",
+    "Permission:FluentCMS:SiteContent:Blocks": "Sisältölohkot",
+    "Permission:FluentCMS:SiteContent:ContentTypes": "Sisältötyypit",
+    "Permission:FluentCMS:SiteContent:ContentTypeFields": "Sisältötyypin kentät",
+    "Permission:FluentCMS:SiteContent:Layouts": "Asettelut",
+    "Permission:FluentCMS:SiteContent:Pages": "Sivut",
+    "Permission:FluentCMS:SiteContent:Sites": "Sivustot",
+    "Permission:FluentCMS:ApiTokens:ApiToken": "API-tunnus",
+    "Permission:FluentCMS:IO:Files": "Tiedostot",
+    "Permission:FluentCMS:IO:Folders": "Kansiot",
+    "Permission:FluentCMS:Plugins:Plugin": "Lisäosat",
+    "Permission:FluentCMS:Plugins:PluginContents": "Lisäosien sisältö",
+    "Permission:FluentCMS:Settings:GlobalSettings": "Yleiset asetukset",
+    "Permission:FluentCMS:Settings:TenantSettings": "Vuokraajakohtaiset asetukset",
+    "Permission:FluentCMS:Membership:Members": "Jäsenet",
+    "Permission:FluentCMS:Membership:Roles": "Roolit",
+    "Permission:ResetPassword": "Palauta salasana"
+  }
+}

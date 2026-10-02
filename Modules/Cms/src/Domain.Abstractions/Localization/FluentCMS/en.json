@@ -1,0 +1,26 @@
+{
+  "culture": "en",
+  "texts": {
+    "Permission:Create": "Create",
+    "Permission:Edit": "Edit",
+    "Permission:Delete": "Delete",
+    "Permission:FluentCMS:SiteContent:Content": "Site Content",
+    "Permission:FluentCMS": "FluentCMS",
+    "Permission:FluentCMS:SiteContent:Blocks": "Content Blocks",
+    "Permission:FluentCMS:SiteContent:ContentTypes": "Content Types",
+    "Permission:FluentCMS:SiteContent:ContentTypeFields": "Content Type Fields",
+    "Permission:FluentCMS:SiteContent:Layouts": "Layouts",
+    "Permission:FluentCMS:SiteContent:Pages": "Pages",
+    "Permission:FluentCMS:SiteContent:Sites": "Sites",
+    "Permission:FluentCMS:ApiTokens:ApiToken": "API Token",
+    "Permission:FluentCMS:IO:Files": "Files",
+    "Permission:FluentCMS:IO:Folders": "Folders",
+    "Permission:FluentCMS:Plugins:Plugin": "Plugins",
+    "Permission:FluentCMS:Plugins:PluginContents": "Plugin Contents",
+    "Permission:FluentCMS:Settings:GlobalSettings": "Global Settings",
+    "Permission:FluentCMS:Settings:TenantSettings": "Tenant Settings",
+    "Permission:FluentCMS:Membership:Members": "Members",
+    "Permission:FluentCMS:Membership:Roles": "Roles",
+    "Permission:ResetPassword": "Reset Password"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "ByteLabs.FluentCMS.Cms.Application.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Sandbox\\FluentCMS\\Modules\\Cms\\src\\Application.Abstractions",
+  "ByteLabs.FluentCMS.Cms.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Sandbox\\FluentCMS\\Modules\\Cms\\src\\Application",
+  "ByteLabs.FluentCMS.Cms.Application.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Sandbox\\FluentCMS\\Modules\\Cms\\test\\Application.Tests",
+  "ByteLabs.FluentCMS.Cms.Domain.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Sandbox\\FluentCMS\\Modules\\Cms\\src\\Domain.Abstractions",
+  "ByteLabs.FluentCMS.Cms.Domain.Context, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Sandbox\\FluentCMS\\Modules\\Cms\\src\\Domain.Context",
+  "ByteLabs.FluentCMS.Cms.Domain.Context.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Sandbox\\FluentCMS\\Modules\\Cms\\test\\Domain.Context.Tests",
+  "ByteLabs.FluentCMS.Cms.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Sandbox\\FluentCMS\\Modules\\Cms\\src\\Domain",
+  "ByteLabs.FluentCMS.Cms.Domain.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Sandbox\\FluentCMS\\Modules\\Cms\\test\\Domain.Tests",
+  "ByteLabs.FluentCMS.Cms.HttpApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Sandbox\\FluentCMS\\Modules\\Cms\\src\\HttpApi",
+  "ByteLabs.FluentCMS.Cms.TestBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Sandbox\\FluentCMS\\Modules\\Cms\\test\\TestBase",
+  "FluentCMS.Providers.MessageBusProviders.Abstractions, Version=0.0.1.0, Culture=neutral, PublicKeyToken=null": "D:\\Sandbox\\FluentCMS\\src\\Providers\\MessageBusProviders\\FluentCMS.Providers.MessageBusProviders.Abstractions",
+  "FluentCMS.Shared, Version=0.0.1.0, Culture=neutral, PublicKeyToken=null": "D:\\Sandbox\\FluentCMS\\src\\FluentCMS.Shared"
+}

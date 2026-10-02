@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="../common.test.xunit.props" />
+
+	<PropertyGroup>
+		<RootNamespace>FluentCMS</RootNamespace>
+		<AssemblyName>ByteLabs.FluentCMS.$(MSBuildProjectName)</AssemblyName>
+		<GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Data.Sqlite" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="ByteLabs.Foundations.DataFactory.EntityFrameworkCore.Sqlite" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\src\Domain.Context\Cms.Domain.Context.csproj" />
+		<ProjectReference Include="..\TestBase\Cms.TestBase.csproj" />
+	</ItemGroup>
+
+</Project>

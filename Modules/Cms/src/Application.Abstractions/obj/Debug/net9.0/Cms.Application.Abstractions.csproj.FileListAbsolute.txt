@@ -1,0 +1,16 @@
+D:\Sandbox\FluentCMS\Modules\Cms\src\Application.Abstractions\obj\Debug\net9.0\Cms.Application.Abstractions.csproj.AssemblyReference.cache
+D:\Sandbox\FluentCMS\Modules\Cms\src\Application.Abstractions\obj\Debug\net9.0\Cms.Application.Abstractions.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sandbox\FluentCMS\Modules\Cms\src\Application.Abstractions\obj\Debug\net9.0\Cms.Application.Abstractions.AssemblyInfoInputs.cache
+D:\Sandbox\FluentCMS\Modules\Cms\src\Application.Abstractions\obj\Debug\net9.0\Cms.Application.Abstractions.AssemblyInfo.cs
+D:\Sandbox\FluentCMS\Modules\Cms\src\Application.Abstractions\obj\Debug\net9.0\Cms.Application.Abstractions.csproj.CoreCompileInputs.cache
+D:\Sandbox\FluentCMS\Modules\Cms\src\Application.Abstractions\obj\Debug\net9.0\Cms.Application.Abstractions.sourcelink.json
+D:\Sandbox\FluentCMS\Modules\Cms\src\Application.Abstractions\obj\Debug\net9.0\Cms.Appl.C14DEFCD.Up2Date
+D:\Sandbox\FluentCMS\Modules\Cms\src\Application.Abstractions\bin\Debug\net9.0\ByteLabs.FluentCMS.Cms.Application.Abstractions.deps.json
+D:\Sandbox\FluentCMS\Modules\Cms\src\Application.Abstractions\bin\Debug\net9.0\ByteLabs.FluentCMS.Cms.Application.Abstractions.dll
+D:\Sandbox\FluentCMS\Modules\Cms\src\Application.Abstractions\bin\Debug\net9.0\ByteLabs.FluentCMS.Cms.Application.Abstractions.pdb
+D:\Sandbox\FluentCMS\Modules\Cms\src\Application.Abstractions\bin\Debug\net9.0\ByteLabs.FluentCMS.Cms.Domain.Abstractions.dll
+D:\Sandbox\FluentCMS\Modules\Cms\src\Application.Abstractions\bin\Debug\net9.0\ByteLabs.FluentCMS.Cms.Domain.Abstractions.pdb
+D:\Sandbox\FluentCMS\Modules\Cms\src\Application.Abstractions\obj\Debug\net9.0\ByteLabs.FluentCMS.Cms.Application.Abstractions.dll
+D:\Sandbox\FluentCMS\Modules\Cms\src\Application.Abstractions\obj\Debug\net9.0\refint\ByteLabs.FluentCMS.Cms.Application.Abstractions.dll
+D:\Sandbox\FluentCMS\Modules\Cms\src\Application.Abstractions\obj\Debug\net9.0\ByteLabs.FluentCMS.Cms.Application.Abstractions.pdb
+D:\Sandbox\FluentCMS\Modules\Cms\src\Application.Abstractions\obj\Debug\net9.0\ref\ByteLabs.FluentCMS.Cms.Application.Abstractions.dll

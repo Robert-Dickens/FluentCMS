@@ -1,0 +1,26 @@
+{
+  "culture": "ar",
+  "texts": {
+    "Permission:Create": "إنشاء",
+    "Permission:Edit": "تعديل",
+    "Permission:Delete": "حذف",
+    "Permission:FluentCMS:SiteContent:Content": "محتوى الموقع",
+    "Permission:FluentCMS": "FluentCMS",
+    "Permission:FluentCMS:SiteContent:Blocks": "كتل المحتوى",
+    "Permission:FluentCMS:SiteContent:ContentTypes": "أنواع المحتوى",
+    "Permission:FluentCMS:SiteContent:ContentTypeFields": "حقول نوع المحتوى",
+    "Permission:FluentCMS:SiteContent:Layouts": "التخطيطات",
+    "Permission:FluentCMS:SiteContent:Pages": "الصفحات",
+    "Permission:FluentCMS:SiteContent:Sites": "المواقع",
+    "Permission:FluentCMS:ApiTokens:ApiToken": "رمز API",
+    "Permission:FluentCMS:IO:Files": "الملفات",
+    "Permission:FluentCMS:IO:Folders": "المجلدات",
+    "Permission:FluentCMS:Plugins:Plugin": "الإضافات",
+    "Permission:FluentCMS:Plugins:PluginContents": "محتوى الإضافات",
+    "Permission:FluentCMS:Settings:GlobalSettings": "الإعدادات العامة",
+    "Permission:FluentCMS:Settings:TenantSettings": "إعدادات المستأجر",
+    "Permission:FluentCMS:Membership:Members": "الأعضاء",
+    "Permission:FluentCMS:Membership:Roles": "الأدوار",
+    "Permission:ResetPassword": "إعادة تعيين كلمة المرور"
+  }
+}

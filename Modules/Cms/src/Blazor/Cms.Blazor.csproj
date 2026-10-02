@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+	<PropertyGroup>
+		<TargetFrameworks>$(DefaultNetCoreTargetFramework)</TargetFrameworks>
+		<IsPackable>false</IsPackable>
+		<OutputType>Library</OutputType>
+		<NoDefaultLaunchSettingsFile>true</NoDefaultLaunchSettingsFile>
+	</PropertyGroup>
+
+	<!--#if (Debug)-->
+	<PropertyGroup>
+		<RootNamespace>MyNamespace.Blazor</RootNamespace>
+	</PropertyGroup>
+	<!--#endif-->
+
+
+	<ItemGroup>
+		<PackageReference Include="ByteLabs.Foundations.AutoMapper" />
+		<PackageReference Include="ByteLabs.Foundations.AspNetCore.Components.Web.Theming" />
+		<PackageReference Include="ByteLabs.Foundations.AspNetCore.Components.FluentDesignUI.Web" />
+	</ItemGroup>
+	
+	<ItemGroup>
+		<ProjectReference Include="..\Application.Abstractions\MyProjectName.Application.Abstractions.csproj" />
+	</ItemGroup>
+</Project>

@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="../common.test.xunit.props" />
+	
+	<PropertyGroup>
+		<RootNamespace>FluentCMS</RootNamespace>
+		<AssemblyName>ByteLabs.FluentCMS.$(MSBuildProjectName)</AssemblyName>
+		<GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\src\Application\Cms.Application.csproj" />
+	  <ProjectReference Include="..\Domain.Tests\Cms.Domain.Tests.csproj" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>$(DefaultNetCoreTargetFramework)</TargetFrameworks>
+		<IsPackable>false</IsPackable>
+		<RootNamespace>FluentCMS.Services</RootNamespace>
+		<AssemblyName>ByteLabs.FluentCMS.$(MSBuildProjectName)</AssemblyName>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="ByteLabs.Foundations.Ddd.Application" />
+		<PackageReference Include="ByteLabs.Foundations.Mapperly" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\..\..\src\FluentCMS.Shared\FluentCMS.Shared.csproj" />
+		<ProjectReference Include="..\..\..\..\src\Providers\MessageBusProviders\FluentCMS.Providers.MessageBusProviders.Abstractions\FluentCMS.Providers.MessageBusProviders.Abstractions.csproj" />
+		<ProjectReference Include="..\Application.Abstractions\Cms.Application.Abstractions.csproj" />
+		<ProjectReference Include="..\Domain\Cms.Domain.csproj" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "FluentCMS.Shared/0.0.1": {
+        "runtime": {
+          "FluentCMS.Shared.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FluentCMS.Shared/0.0.1": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

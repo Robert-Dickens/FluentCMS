@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>$(ClientCompatibility)</TargetFrameworks>
+		<IsPackable>false</IsPackable>
+		<RootNamespace>FluentCMS</RootNamespace>
+		<AssemblyName>ByteLabs.FluentCMS.$(MSBuildProjectName)</AssemblyName>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Identity.Stores" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<PackageReference Include="ByteLabs.Foundations.Ddd.Application.Abstractions" />
+		<PackageReference Include="ByteLabs.Foundations.Authorization" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Domain.Abstractions\Cms.Domain.Abstractions.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="ByteLabs.Foundations.Application.Dtos"/>
+		<Using Include="ByteLabs.Foundations.Application.Services"/>
+	</ItemGroup>
+</Project>

@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>$(DefaultNetCoreTargetFramework)</TargetFrameworks>
+		<IsPackable>false</IsPackable>
+		<RootNamespace>FluentCMS.Domain</RootNamespace>
+		<AssemblyName>ByteLabs.FluentCMS.$(MSBuildProjectName)</AssemblyName>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="ByteLabs.Foundations.Ddd.Domain" />
+		<PackageReference Include="ByteLabs.PlatformServices.AuditLogging.Domain" />
+		<PackageReference Include="ByteLabs.Foundations.Features" />
+		<PackageReference Include="ByteLabs.Foundations.GlobalFeatures" />
+		<PackageReference Include="ByteLabs.PlatformServices.Users.Domain" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Identity.Stores" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Domain.Abstractions\Cms.Domain.Abstractions.csproj" />
+	</ItemGroup>
+
+</Project>

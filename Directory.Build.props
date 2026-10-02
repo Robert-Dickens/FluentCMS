@@ -1,0 +1,9 @@
+<Project>
+
+	<PropertyGroup>
+		<DefaultNetCoreTargetFramework>net9.0</DefaultNetCoreTargetFramework>
+		<ClientCompatibility>$(DefaultNetCoreTargetFramework)</ClientCompatibility>
+		<CurrentTargetFramework>net9.0</CurrentTargetFramework>
+	</PropertyGroup>
+
+</Project>

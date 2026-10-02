@@ -1,0 +1,41 @@
+<Project>
+	<PropertyGroup>
+		<TargetFramework Condition=" '$(TargetFrameworks)' == '' ">$(CurrentTargetFramework)</TargetFramework>
+		<IsPackable Condition=" '$(IsPackable)' == '' ">false</IsPackable>
+		<IsTestProject>true</IsTestProject>
+		<NoWarn>$(NoWarn);CS1591;CS0436</NoWarn>
+		<WarningsAsErrors>NU1506</WarningsAsErrors>
+		<GeneratePackageOnBuild>$(IsPackable)</GeneratePackageOnBuild>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<RootNamespace Condition=" '$(RootNamespace)' != '' ">$(RootNamespace).Testing</RootNamespace>
+	</PropertyGroup>
+	
+	<ItemGroup>
+		<PackageReference Include="Microsoft.NET.Test.Sdk" />
+		<PackageReference Include="FluentAssertions" />
+		<PackageReference Include="Moq.AutoMock" />
+		<PackageReference Include="Moq" />
+		<PackageReference Include="Shouldly" />
+		<PackageReference Include="ByteLabs.Foundations.TestFactory.RandomData" />
+		<PackageReference Include="Bogus" />
+
+		<PackageReference Include="coverlet.collector" >
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+
+		<PackageReference Include="NSubstitute" />
+		<PackageReference Include="NSubstitute.Analyzers.CSharp" >
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+		</PackageReference>
+
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="Shouldly"/>
+	</ItemGroup>
+
+
+</Project>

@@ -1,0 +1,21 @@
+<Project>
+	<Import Project="$(MSBuildThisFileDirectory)/common.test.props" />
+	
+	<PropertyGroup>
+		<WarningsAsErrors>$(WarningsAsErrors);xUnit1048</WarningsAsErrors>
+	</PropertyGroup>
+	
+	<ItemGroup>
+		<PackageReference Include="xunit"  PrivateAssets="All"  />
+		<PackageReference Include="xunit.runner.visualstudio">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Condition=" '$(NoXunitParallelFramework)' != 'true' " Include="Meziantou.Xunit.ParallelTestFramework" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="Xunit"/>
+	</ItemGroup>
+	
+</Project>

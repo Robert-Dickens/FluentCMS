@@ -1,0 +1,26 @@
+{
+  "culture": "tr",
+  "texts": {
+    "Permission:Create": "Oluştur",
+    "Permission:Edit": "Düzenle",
+    "Permission:Delete": "Sil",
+    "Permission:FluentCMS:SiteContent:Content": "Site içeriği",
+    "Permission:FluentCMS": "FluentCMS",
+    "Permission:FluentCMS:SiteContent:Blocks": "İçerik Blokları",
+    "Permission:FluentCMS:SiteContent:ContentTypes": "İçerik Türleri",
+    "Permission:FluentCMS:SiteContent:ContentTypeFields": "İçerik Türü Alanları",
+    "Permission:FluentCMS:SiteContent:Layouts": "Düzenler",
+    "Permission:FluentCMS:SiteContent:Pages": "Sayfalar",
+    "Permission:FluentCMS:SiteContent:Sites": "Siteler",
+    "Permission:FluentCMS:ApiTokens:ApiToken": "API Belirteci",
+    "Permission:FluentCMS:IO:Files": "Dosyalar",
+    "Permission:FluentCMS:IO:Folders": "Klasörler",
+    "Permission:FluentCMS:Plugins:Plugin": "Eklentiler",
+    "Permission:FluentCMS:Plugins:PluginContents": "Eklenti İçerikleri",
+    "Permission:FluentCMS:Settings:GlobalSettings": "Genel Ayarlar",
+    "Permission:FluentCMS:Settings:TenantSettings": "Kiracı Ayarları",
+    "Permission:FluentCMS:Membership:Members": "Üyeler",
+    "Permission:FluentCMS:Membership:Roles": "Roller",
+    "Permission:ResetPassword": "Şifreyi Sıfırla"
+  }
+}

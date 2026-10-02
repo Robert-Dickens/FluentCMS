@@ -1,0 +1,26 @@
+{
+  "culture": "sl",
+  "texts": {
+    "Permission:Create": "Ustvari",
+    "Permission:Edit": "Uredi",
+    "Permission:Delete": "Izbriši",
+    "Permission:FluentCMS:SiteContent:Content": "Vsebina spletnega mesta",
+    "Permission:FluentCMS": "FluentCMS",
+    "Permission:FluentCMS:SiteContent:Blocks": "Bloki vsebine",
+    "Permission:FluentCMS:SiteContent:ContentTypes": "Vrste vsebine",
+    "Permission:FluentCMS:SiteContent:ContentTypeFields": "Polja vrste vsebine",
+    "Permission:FluentCMS:SiteContent:Layouts": "Postavitve",
+    "Permission:FluentCMS:SiteContent:Pages": "Strani",
+    "Permission:FluentCMS:SiteContent:Sites": "Spletna mesta",
+    "Permission:FluentCMS:ApiTokens:ApiToken": "Žeton API",
+    "Permission:FluentCMS:IO:Files": "Datoteke",
+    "Permission:FluentCMS:IO:Folders": "Mape",
+    "Permission:FluentCMS:Plugins:Plugin": "Vtičniki",
+    "Permission:FluentCMS:Plugins:PluginContents": "Vsebina vtičnikov",
+    "Permission:FluentCMS:Settings:GlobalSettings": "Splošne nastavitve",
+    "Permission:FluentCMS:Settings:TenantSettings": "Nastavitve najemnika",
+    "Permission:FluentCMS:Membership:Members": "Člani",
+    "Permission:FluentCMS:Membership:Roles": "Vloge",
+    "Permission:ResetPassword": "Ponastavi geslo"
+  }
+}

@@ -18,7 +18,7 @@ public class ContentController(
     {
         // TODO: Validate siteId
         var contentType = await contentTypeService.GetBySlug(siteId, contentTypeSlug, cancellationToken);
-        var contents = await contentService.GetAll(contentType.Id, cancellationToken);
+        var contents = await contentService.GetAllByContentType(contentType.Id, cancellationToken);
         var contentResponses = mapper.Map<List<ContentDetailResponse>>(contents);
         return OkPaged(contentResponses);
     }

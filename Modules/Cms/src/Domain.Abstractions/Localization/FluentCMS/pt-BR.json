@@ -1,0 +1,26 @@
+{
+  "culture": "pt-BR",
+  "texts": {
+    "Permission:Create": "Criar",
+    "Permission:Edit": "Editar",
+    "Permission:Delete": "Excluir",
+    "Permission:FluentCMS:SiteContent:Content": "Conteúdo do site",
+    "Permission:FluentCMS": "FluentCMS",
+    "Permission:FluentCMS:SiteContent:Blocks": "Blocos de conteúdo",
+    "Permission:FluentCMS:SiteContent:ContentTypes": "Tipos de conteúdo",
+    "Permission:FluentCMS:SiteContent:ContentTypeFields": "Campos do tipo de conteúdo",
+    "Permission:FluentCMS:SiteContent:Layouts": "Layouts",
+    "Permission:FluentCMS:SiteContent:Pages": "Páginas",
+    "Permission:FluentCMS:SiteContent:Sites": "Sites",
+    "Permission:FluentCMS:ApiTokens:ApiToken": "Token de API",
+    "Permission:FluentCMS:IO:Files": "Arquivos",
+    "Permission:FluentCMS:IO:Folders": "Pastas",
+    "Permission:FluentCMS:Plugins:Plugin": "Plugins",
+    "Permission:FluentCMS:Plugins:PluginContents": "Conteúdo dos plugins",
+    "Permission:FluentCMS:Settings:GlobalSettings": "Configurações globais",
+    "Permission:FluentCMS:Settings:TenantSettings": "Configurações do locatário",
+    "Permission:FluentCMS:Membership:Members": "Membros",
+    "Permission:FluentCMS:Membership:Roles": "Funções",
+    "Permission:ResetPassword": "Redefinir senha"
+  }
+}

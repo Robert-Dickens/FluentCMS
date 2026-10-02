@@ -1,0 +1,26 @@
+{
+  "culture": "fr",
+  "texts": {
+    "Permission:Create": "Créer",
+    "Permission:Edit": "Modifier",
+    "Permission:Delete": "Supprimer",
+    "Permission:FluentCMS:SiteContent:Content": "Contenu du site",
+    "Permission:FluentCMS": "FluentCMS",
+    "Permission:FluentCMS:SiteContent:Blocks": "Blocs de contenu",
+    "Permission:FluentCMS:SiteContent:ContentTypes": "Types de contenu",
+    "Permission:FluentCMS:SiteContent:ContentTypeFields": "Champs des types de contenu",
+    "Permission:FluentCMS:SiteContent:Layouts": "Mises en page",
+    "Permission:FluentCMS:SiteContent:Pages": "Pages",
+    "Permission:FluentCMS:SiteContent:Sites": "Sites",
+    "Permission:FluentCMS:ApiTokens:ApiToken": "Jeton d’API",
+    "Permission:FluentCMS:IO:Files": "Fichiers",
+    "Permission:FluentCMS:IO:Folders": "Dossiers",
+    "Permission:FluentCMS:Plugins:Plugin": "Extensions",
+    "Permission:FluentCMS:Plugins:PluginContents": "Contenus des extensions",
+    "Permission:FluentCMS:Settings:GlobalSettings": "Paramètres globaux",
+    "Permission:FluentCMS:Settings:TenantSettings": "Paramètres du locataire",
+    "Permission:FluentCMS:Membership:Members": "Membres",
+    "Permission:FluentCMS:Membership:Roles": "Rôles",
+    "Permission:ResetPassword": "Réinitialiser le mot de passe"
+  }
+}

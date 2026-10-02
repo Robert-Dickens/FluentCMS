@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>$(CurrentTargetFramework)</TargetFramework>
+		<UseXunit>true</UseXunit>
+		<GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="bunit" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\src\Blazor\MyProjectName.Blazor.csproj" />
+	  <ProjectReference Include="..\Domain.Context.Tests\MyProjectName.Domain.Context.Tests.csproj" />
+	</ItemGroup>
+
+</Project>
