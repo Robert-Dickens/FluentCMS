@@ -6,6 +6,7 @@ using FluentCMS.Domain.Content;
 using FluentCMS.Domain.Context;
 using FluentCMS.Domain.IO;
 using FluentCMS.Domain.Membership;
+using FluentCMS.Domain.Permissions;
 using FluentCMS.Domain.Plugins;
 using FluentCMS.Domain.Settings;
 using Microsoft.Extensions.DependencyInjection;
@@ -45,6 +46,8 @@ public class FluentCMSDomainContextModule : PlatformModule
             options.AddRepository<ApiTokenModel, ApiTokenModelRepository>();
             options.AddRepository<RoleModel, RoleModelRepository>();
             options.AddRepository<UserModel, UserMembershipRepository>();
+            options.AddRepository<UserRoleModel, UserRoleModelRepository>();
+            options.AddRepository<PermissionModel, PermissionModelRepository>();
             /* default repositories only for aggregate roots */
             options.AddDefaultRepositories(includeAllEntities: true);
         });

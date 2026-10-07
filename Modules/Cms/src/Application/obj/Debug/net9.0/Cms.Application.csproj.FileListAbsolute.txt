@@ -19,6 +19,12 @@ D:\Sandbox\FluentCMS\Modules\Cms\src\Application\obj\Debug\net9.0\refint\ByteLab
 D:\Sandbox\FluentCMS\Modules\Cms\src\Application\obj\Debug\net9.0\ByteLabs.FluentCMS.Cms.Application.pdb
 D:\Sandbox\FluentCMS\Modules\Cms\src\Application\obj\Debug\net9.0\ref\ByteLabs.FluentCMS.Cms.Application.dll
 D:\Sandbox\FluentCMS\Modules\Cms\src\Application\bin\Debug\net9.0\FluentCMS.Providers.MessageBusProviders.Abstractions.dll
-D:\Sandbox\FluentCMS\Modules\Cms\src\Application\bin\Debug\net9.0\FluentCMS.Shared.dll
-D:\Sandbox\FluentCMS\Modules\Cms\src\Application\bin\Debug\net9.0\FluentCMS.Shared.pdb
 D:\Sandbox\FluentCMS\Modules\Cms\src\Application\bin\Debug\net9.0\FluentCMS.Providers.MessageBusProviders.Abstractions.pdb
+D:\Sandbox\FluentCMS\Modules\Cms\src\Application\bin\Debug\net9.0\FluentCMS.Identity.dll
+D:\Sandbox\FluentCMS\Modules\Cms\src\Application\bin\Debug\net9.0\FluentCMS.Providers.ApiTokenProviders.Abstractions.dll
+D:\Sandbox\FluentCMS\Modules\Cms\src\Application\bin\Debug\net9.0\FluentCMS.Providers.EmailProviders.Abstractions.dll
+D:\Sandbox\FluentCMS\Modules\Cms\src\Application\bin\Debug\net9.0\FluentCMS.Providers.FileStorageProviders.Abstractions.dll
+D:\Sandbox\FluentCMS\Modules\Cms\src\Application\bin\Debug\net9.0\FluentCMS.Identity.pdb
+D:\Sandbox\FluentCMS\Modules\Cms\src\Application\bin\Debug\net9.0\FluentCMS.Providers.ApiTokenProviders.Abstractions.pdb
+D:\Sandbox\FluentCMS\Modules\Cms\src\Application\bin\Debug\net9.0\FluentCMS.Providers.EmailProviders.Abstractions.pdb
+D:\Sandbox\FluentCMS\Modules\Cms\src\Application\bin\Debug\net9.0\FluentCMS.Providers.FileStorageProviders.Abstractions.pdb

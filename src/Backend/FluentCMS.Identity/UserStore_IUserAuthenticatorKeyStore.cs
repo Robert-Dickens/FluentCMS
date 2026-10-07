@@ -2,14 +2,14 @@
 
 namespace FluentCMS.Identity;
 
-public partial class UserStore : IUserAuthenticatorKeyStore<User>
+public partial class UserStore : IUserAuthenticatorKeyStore<UserModel>
 {
-    public Task<string?> GetAuthenticatorKeyAsync(User user, CancellationToken cancellationToken)
+    public Task<string?> GetAuthenticatorKeyAsync(UserModel user, CancellationToken cancellationToken)
     {
         return Task.FromResult(user?.AuthenticatorKey);
     }
 
-    public Task SetAuthenticatorKeyAsync(User user, string key, CancellationToken cancellationToken)
+    public Task SetAuthenticatorKeyAsync(UserModel user, string key, CancellationToken cancellationToken)
     {
         user.AuthenticatorKey = key;
         return Task.CompletedTask;

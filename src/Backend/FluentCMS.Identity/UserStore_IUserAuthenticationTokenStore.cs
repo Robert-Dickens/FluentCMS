@@ -2,9 +2,9 @@
 
 namespace FluentCMS.Identity;
 
-public partial class UserStore : IUserAuthenticationTokenStore<User>
+public partial class UserStore : IUserAuthenticationTokenStore<UserModel>
 {
-    public Task SetTokenAsync(User user, string loginProvider, string name, string? value, CancellationToken cancellationToken)
+    public Task SetTokenAsync(UserModel user, string loginProvider, string name, string? value, CancellationToken cancellationToken)
     {
         var token = user.Tokens.FirstOrDefault(x => x.LoginProvider == loginProvider && x.Name == name);
 
@@ -26,7 +26,7 @@ public partial class UserStore : IUserAuthenticationTokenStore<User>
         return Task.CompletedTask;
     }
 
-    public Task RemoveTokenAsync(User user, string loginProvider, string name, CancellationToken cancellationToken)
+    public Task RemoveTokenAsync(UserModel user, string loginProvider, string name, CancellationToken cancellationToken)
     {
         var userTokens = user.Tokens ?? [];
         userTokens.RemoveAll(x => x.LoginProvider == loginProvider && x.Name == name);
@@ -34,7 +34,7 @@ public partial class UserStore : IUserAuthenticationTokenStore<User>
         return Task.CompletedTask;
     }
 
-    public Task<string?> GetTokenAsync(User user, string loginProvider, string name, CancellationToken cancellationToken)
+    public Task<string?> GetTokenAsync(UserModel user, string loginProvider, string name, CancellationToken cancellationToken)
     {
         var userTokens = user.Tokens ?? [];
         var token = userTokens.FirstOrDefault(x => x.LoginProvider == loginProvider && x.Name == name);

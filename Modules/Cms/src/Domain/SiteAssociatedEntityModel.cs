@@ -2,11 +2,14 @@
 using ByteLabs.Foundations.Data;
 using ByteLabs.Foundations.Domain.Entities;
 using ByteLabs.Foundations.Domain.Entities.Auditing;
+using ByteLabs.Foundations.Domain.Repositories;
 using ByteLabs.Foundations.MultiTenancy;
 using ByteLabs.Foundations.ObjectExtending;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace FluentCMS.Domain;
 
@@ -39,4 +42,10 @@ public abstract class SiteAssociatedEntityModel : FullAuditedEntity<Guid>, ISite
         return ExtensibleObjectValidator.GetValidationErrors(this, validationContext);
     }
 
+}
+
+
+public interface ISiteAssociatedRepository<TEntity> : IRepository<TEntity> where TEntity : class, IEntity
+{
+    Task<IEnumerable<TEntity>> GetAllForSite(Guid siteId, CancellationToken cancellationToken = default);
 }

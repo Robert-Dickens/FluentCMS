@@ -20,7 +20,7 @@
 	<ItemGroup>
 		<PackageReference Include="ByteLabs.Foundations.Ddd.Domain.Abstractions" />
 		<PackageReference Include="ByteLabs.Foundations.Validation" />
-		<PackageReference Include="ByteLabs.PlatformServices.Users.Abstractions"  />
+		<PackageReference Include="ByteLabs.PlatformServices.Users.Abstractions" />
 	</ItemGroup>
 
 </Project>

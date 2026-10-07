@@ -9,4 +9,5 @@ public class ContentTypeFieldModelRepository : EfCoreRepository<IFluentCMSDbCont
     public ContentTypeFieldModelRepository(IDbContextProvider<IFluentCMSDbContext> dbContextProvider) : base(dbContextProvider)
     {
     }
+
 }

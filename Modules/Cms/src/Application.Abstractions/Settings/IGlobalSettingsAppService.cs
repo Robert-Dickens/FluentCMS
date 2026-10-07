@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -9,9 +10,21 @@ public interface IGlobalSettingsAppService : ICrudAppService<GlobalSettings, Gui
     Task<GlobalSettings?> Get(CancellationToken cancellationToken = default);
 }
 
+public interface IGlobalSettingsService : IApplicationService
+{
+    Task<GlobalSettings> Update(GlobalSettings settings, CancellationToken cancellationToken = default);
+    Task<GlobalSettings> Get(CancellationToken cancellationToken = default);
+}
+
 public class GlobalSettings : FullAuditedEntityDto<Guid>
 {
-    public string SuperAdmins { get; set; } = string.Empty;
+    public IEnumerable<string> SuperAdmins { get; set; } = [];
+    public FileUploadConfig FileUpload { get; set; } = default!;
+}
+
+public class GlobalSettingsResponse: GlobalSettings
+{
+
 }
 
 public class GetGlobalSettingsRequest : FilteredAndPagedAndSortedResultRequestDto
@@ -20,10 +33,10 @@ public class GetGlobalSettingsRequest : FilteredAndPagedAndSortedResultRequestDt
 
 public class GlobalSettingsCreateRequest : ExtensibleEntityDto
 {
-    public string SuperAdmins { get; set; } = string.Empty;
+    public IEnumerable<string> SuperAdmins { get; set; } = [];
 }
 
 public class GlobalSettingsUpdateRequest : ExtensibleEntityDto
 {
-    public string SuperAdmins { get; set; } = string.Empty;
+    public IEnumerable<string> SuperAdmins { get; set; } = [];
 }

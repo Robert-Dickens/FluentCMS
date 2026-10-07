@@ -15,4 +15,9 @@ public class SettingsModel : FullAuditedEntity<Guid>, IMultiTenant
 
     }
 
+    public SettingsModel(Guid id):base(id)
+    {
+        
+    }
+
 }

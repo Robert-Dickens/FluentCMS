@@ -1,4 +1,5 @@
-﻿using FluentCMS.Identity;
+﻿using FluentCMS.Domain.Membership;
+using FluentCMS.Identity;
 using FluentCMS.Services;
 using Microsoft.AspNetCore.Identity;
 
@@ -26,13 +27,13 @@ public static class ServiceExtensions
         services.AddOptions<JwtOptions>()
             .BindConfiguration("JwtOptions");
 
-        var builder = services.AddIdentityCore<User>();
+        var builder = services.AddIdentityCore<UserModel>();
 
         builder
             .AddUserStore<UserStore>()
-            .AddUserManager<UserManager<User>>()
+            .AddUserManager<UserManager<UserModel>>()
             .AddDefaultTokenProviders()
-            .AddTokenProvider<DataProtectorTokenProvider<User>>(ServiceConstants.PASSWORD_RESET_TOKEN_PROVIDER);
+            .AddTokenProvider<DataProtectorTokenProvider<UserModel>>(ServiceConstants.PASSWORD_RESET_TOKEN_PROVIDER);
 
         return builder;
     }

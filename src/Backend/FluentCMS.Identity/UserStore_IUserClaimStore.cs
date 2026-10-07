@@ -3,9 +3,9 @@ using System.Security.Claims;
 
 namespace FluentCMS.Identity;
 
-public partial class UserStore : IUserClaimStore<User>
+public partial class UserStore : IUserClaimStore<UserModel>
 {
-    public Task AddClaimsAsync(User user, IEnumerable<Claim> claims, CancellationToken cancellationToken)
+    public Task AddClaimsAsync(UserModel user, IEnumerable<Claim> claims, CancellationToken cancellationToken)
     {
         foreach (var claim in claims)
         {
@@ -21,7 +21,7 @@ public partial class UserStore : IUserClaimStore<User>
         return Task.CompletedTask;
     }
 
-    public Task ReplaceClaimAsync(User user, Claim claim, Claim newClaim, CancellationToken cancellationToken)
+    public Task ReplaceClaimAsync(UserModel user, Claim claim, Claim newClaim, CancellationToken cancellationToken)
     {
         user.Claims.RemoveAll(x => x.ClaimType == claim.Type && x.ClaimValue == claim.Value);
 
@@ -37,7 +37,7 @@ public partial class UserStore : IUserClaimStore<User>
         return Task.CompletedTask;
     }
 
-    public Task RemoveClaimsAsync(User user, IEnumerable<Claim> claims, CancellationToken cancellationToken)
+    public Task RemoveClaimsAsync(UserModel user, IEnumerable<Claim> claims, CancellationToken cancellationToken)
     {
         foreach (var claim in claims)
             user.Claims.RemoveAll(x => x.ClaimType == claim.Type && x.ClaimValue == claim.Value);
@@ -45,7 +45,7 @@ public partial class UserStore : IUserClaimStore<User>
         return Task.CompletedTask;
     }
 
-    public async Task<IList<User>> GetUsersForClaimAsync(Claim claim, CancellationToken cancellationToken)
+    public async Task<IList<UserModel>> GetUsersForClaimAsync(Claim claim, CancellationToken cancellationToken)
     {
         return await repository.GetUsersForClaim(claim, cancellationToken);
     }

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ByteLabs.FluentCMS.Cms.Application.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c63d49cdbc1f4051d34bb71087d904c56e33951e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4945a002623888ba3f945922e1ad08e0ee5fac66")]
 [assembly: System.Reflection.AssemblyProductAttribute("ByteLabs.FluentCMS.Cms.Application.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ByteLabs.FluentCMS.Cms.Application.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

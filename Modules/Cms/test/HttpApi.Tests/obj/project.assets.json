@@ -4444,8 +4444,7 @@
           "ByteLabs.FluentCMS.Cms.Domain": "1.0.0",
           "ByteLabs.Foundations.Ddd.Application": "5.12.0",
           "ByteLabs.Foundations.Mapperly": "5.12.0",
-          "FluentCMS.Providers.MessageBusProviders.Abstractions": "0.0.1",
-          "FluentCMS.Shared": "0.0.1"
+          "FluentCMS.Providers.MessageBusProviders.Abstractions": "0.0.1"
         },
         "compile": {
           "bin/placeholder/ByteLabs.FluentCMS.Cms.Application.dll": {}
@@ -4644,16 +4643,6 @@
         },
         "runtime": {
           "bin/placeholder/FluentCMS.Providers.MessageBusProviders.Abstractions.dll": {}
-        }
-      },
-      "FluentCMS.Shared/0.0.1": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "compile": {
-          "bin/placeholder/FluentCMS.Shared.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/FluentCMS.Shared.dll": {}
         }
       }
     }
@@ -11049,11 +11038,6 @@
       "type": "project",
       "path": "../../../../src/Providers/MessageBusProviders/FluentCMS.Providers.MessageBusProviders.Abstractions/FluentCMS.Providers.MessageBusProviders.Abstractions.csproj",
       "msbuildProject": "../../../../src/Providers/MessageBusProviders/FluentCMS.Providers.MessageBusProviders.Abstractions/FluentCMS.Providers.MessageBusProviders.Abstractions.csproj"
-    },
-    "FluentCMS.Shared/0.0.1": {
-      "type": "project",
-      "path": "../../../../src/FluentCMS.Shared/FluentCMS.Shared.csproj",
-      "msbuildProject": "../../../../src/FluentCMS.Shared/FluentCMS.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {

@@ -4,23 +4,21 @@
     <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageId>FluentCMS.Services</PackageId>
-    <Version>0.0.1</Version>
-    <Authors>Amir Pournasserian</Authors>
     <Company>FluentCMS</Company>
-    <Description>Services.</Description>
-    <PackageTags>fluentcms;cms;services;core</PackageTags>
-    <RepositoryUrl>https://github.com/fluentcms/FluentCMS</RepositoryUrl>
-    <PackageProjectUrl>https://fluentcms.com</PackageProjectUrl>
-    <PackageIcon>icon.png</PackageIcon>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="AutoMapper" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" />
   </ItemGroup>
-  <ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="ByteLabs.Foundations.Ddd.Application" />
+		<PackageReference Include="ByteLabs.Foundations.Mapperly" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+    <ProjectReference Include="..\..\..\Modules\Cms\src\Application.Abstractions\Cms.Application.Abstractions.csproj" />
     <ProjectReference Include="..\..\Providers\ApiTokenProviders\FluentCMS.Providers.ApiTokenProviders.Abstractions\FluentCMS.Providers.ApiTokenProviders.Abstractions.csproj" />
     <ProjectReference Include="..\..\Providers\CacheProviders\FluentCMS.Providers.CacheProviders.Abstractions\FluentCMS.Providers.CacheProviders.Abstractions.csproj" />
     <ProjectReference Include="..\..\Providers\EmailProviders\FluentCMS.Providers.EmailProviders.Abstractions\FluentCMS.Providers.EmailProviders.Abstractions.csproj" />
@@ -30,7 +28,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="..\..\icon.png" Pack="true" PackagePath="icon.png" />
-    <None Include="README.md" Pack="true" PackagePath="README.md" />
+	  <Using Include="FluentCMS.Providers.MessageBusProviders" />
+	  <Using Include="FluentCMS.Services.Models" />
+	  <Using Include="FluentCMS.Services.Permissions" />
+	  <Using Include="System" />
+	  <Using Include="System.Collections.Generic" />
+	  <Using Include="System.Linq" />
+	  <Using Include="System.Threading" />
+	  <Using Include="System.Threading.Tasks" />
   </ItemGroup>
 </Project>

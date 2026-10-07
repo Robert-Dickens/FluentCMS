@@ -1,8 +1,9 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using ByteLabs.Foundations.Threading;
+using Microsoft.AspNetCore.Identity;
 
 namespace FluentCMS.Identity;
 
-public partial class UserStore : IQueryableUserStore<User>
+public partial class UserStore : IQueryableUserStore<UserModel>
 {
-    public IQueryable<User> Users => repository.AsQueryable();
+    public IQueryable<UserModel> Users => AsyncHelper.RunSync(()=> repository.GetQueryableAsync());
 }

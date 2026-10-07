@@ -2,7 +2,7 @@
 
 namespace FluentCMS.Identity;
 
-public partial class UserStore(IUserRepository repository) : IProtectedUserStore<User>
+public partial class UserStore(IUserMembershipRepository repository) : IProtectedUserStore<UserModel>
 {
 
 }

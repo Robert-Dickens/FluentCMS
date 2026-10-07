@@ -2,25 +2,25 @@
 
 namespace FluentCMS.Identity;
 
-public partial class UserStore : IUserPhoneNumberStore<User>
+public partial class UserStore : IUserPhoneNumberStore<UserModel>
 {
-    public Task<string?> GetPhoneNumberAsync(User user, CancellationToken cancellationToken)
+    public Task<string?> GetPhoneNumberAsync(UserModel user, CancellationToken cancellationToken)
     {
         return Task.FromResult(user.PhoneNumber);
     }
 
-    public Task<bool> GetPhoneNumberConfirmedAsync(User user, CancellationToken cancellationToken)
+    public Task<bool> GetPhoneNumberConfirmedAsync(UserModel user, CancellationToken cancellationToken)
     {
         return Task.FromResult(user.PhoneNumberConfirmed);
     }
 
-    public Task SetPhoneNumberAsync(User user, string? phoneNumber, CancellationToken cancellationToken)
+    public Task SetPhoneNumberAsync(UserModel user, string? phoneNumber, CancellationToken cancellationToken)
     {
         user.PhoneNumber = phoneNumber;
         return Task.CompletedTask;
     }
 
-    public Task SetPhoneNumberConfirmedAsync(User user, bool confirmed, CancellationToken cancellationToken)
+    public Task SetPhoneNumberConfirmedAsync(UserModel user, bool confirmed, CancellationToken cancellationToken)
     {
         user.PhoneNumberConfirmed = confirmed;
         return Task.CompletedTask;

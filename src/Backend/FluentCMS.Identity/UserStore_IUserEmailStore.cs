@@ -2,43 +2,43 @@
 
 namespace FluentCMS.Identity;
 
-public partial class UserStore : IUserEmailStore<User>
+public partial class UserStore : IUserEmailStore<UserModel>
 {
-    public Task<string?> GetEmailAsync(User user, CancellationToken cancellationToken)
+    public Task<string?> GetEmailAsync(UserModel user, CancellationToken cancellationToken)
     {
         return Task.FromResult(user.Email);
     }
 
-    public Task<bool> GetEmailConfirmedAsync(User user, CancellationToken cancellationToken)
+    public Task<bool> GetEmailConfirmedAsync(UserModel user, CancellationToken cancellationToken)
     {
         return Task.FromResult(user.EmailConfirmed);
     }
 
-    public async Task<User?> FindByEmailAsync(string normalizedEmail, CancellationToken cancellationToken)
+    public async Task<UserModel?> FindByEmailAsync(string normalizedEmail, CancellationToken cancellationToken)
     {
         cancellationToken.ThrowIfCancellationRequested();
 
         return await repository.FindByEmail(normalizedEmail, cancellationToken);
     }
 
-    public Task<string?> GetNormalizedEmailAsync(User user, CancellationToken cancellationToken)
+    public Task<string?> GetNormalizedEmailAsync(UserModel user, CancellationToken cancellationToken)
     {
         return Task.FromResult(user.NormalizedEmail);
     }
 
-    public Task SetEmailConfirmedAsync(User user, bool confirmed, CancellationToken cancellationToken)
+    public Task SetEmailConfirmedAsync(UserModel user, bool confirmed, CancellationToken cancellationToken)
     {
         user.EmailConfirmed = confirmed;
         return Task.CompletedTask;
     }
 
-    public Task SetNormalizedEmailAsync(User user, string? normalizedEmail, CancellationToken cancellationToken)
+    public Task SetNormalizedEmailAsync(UserModel user, string? normalizedEmail, CancellationToken cancellationToken)
     {
         user.NormalizedEmail = normalizedEmail;
         return Task.CompletedTask;
     }
 
-    public Task SetEmailAsync(User user, string? email, CancellationToken cancellationToken)
+    public Task SetEmailAsync(UserModel user, string? email, CancellationToken cancellationToken)
     {
         user.Email = email;
         return Task.CompletedTask;

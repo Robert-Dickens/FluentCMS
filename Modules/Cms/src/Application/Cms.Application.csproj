@@ -8,12 +8,20 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.StaticFiles" />
+	</ItemGroup>
+	
+	<ItemGroup>
 		<PackageReference Include="ByteLabs.Foundations.Ddd.Application" />
 		<PackageReference Include="ByteLabs.Foundations.Mapperly" />
 	</ItemGroup>
 
+
 	<ItemGroup>
-		<ProjectReference Include="..\..\..\..\src\FluentCMS.Shared\FluentCMS.Shared.csproj" />
+		<ProjectReference Include="..\..\..\..\src\Backend\FluentCMS.Identity\FluentCMS.Identity.csproj" />
+		<ProjectReference Include="..\..\..\..\src\Providers\ApiTokenProviders\FluentCMS.Providers.ApiTokenProviders.Abstractions\FluentCMS.Providers.ApiTokenProviders.Abstractions.csproj" />
+		<ProjectReference Include="..\..\..\..\src\Providers\EmailProviders\FluentCMS.Providers.EmailProviders.Abstractions\FluentCMS.Providers.EmailProviders.Abstractions.csproj" />
+		<ProjectReference Include="..\..\..\..\src\Providers\FileStorageProviders\FluentCMS.Providers.FileStorageProviders.Abstractions\FluentCMS.Providers.FileStorageProviders.Abstractions.csproj" />
 		<ProjectReference Include="..\..\..\..\src\Providers\MessageBusProviders\FluentCMS.Providers.MessageBusProviders.Abstractions\FluentCMS.Providers.MessageBusProviders.Abstractions.csproj" />
 		<ProjectReference Include="..\Application.Abstractions\Cms.Application.Abstractions.csproj" />
 		<ProjectReference Include="..\Domain\Cms.Domain.csproj" />

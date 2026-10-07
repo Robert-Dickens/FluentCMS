@@ -257,6 +257,7 @@
 	<!--Fluent CMS Packages-->
 	<ItemGroup>
 		<PackageVersion Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="$(MicrosoftAspNetCorePackageVersion)" />
+		<PackageVersion Include="Microsoft.AspNet.Identity.Core" Version="2.2.4" />
 		<PackageVersion Include="Microsoft.Extensions.Identity.Stores" Version="$(MicrosoftAspNetCorePackageVersion)" />
 		<PackageVersion Include="Microsoft.AspNetCore.Components.Forms" Version="$(MicrosoftAspNetCorePackageVersion)" />
 		<PackageVersion Include="Microsoft.AspNetCore.Components.Web" Version="$(MicrosoftAspNetCorePackageVersion)" />
@@ -271,7 +272,7 @@
 		<PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="$(MicrosoftAspNetCorePackageVersion)" />
 		<PackageVersion Include="Microsoft.Extensions.Http" Version="$(MicrosoftAspNetCorePackageVersion)" />
 		<PackageVersion Include="Microsoft.EntityFrameworkCore.Relational" Version="$(MicrosoftAspNetCorePackageVersion)" />
-
+		<PackageVersion Include="Microsoft.AspNetCore.StaticFiles" Version="2.3.13" />
 		<PackageVersion Include="Microsoft.Extensions.Configuration.Binder" Version="$(MicrosoftAspNetCorePackageVersion)" />
 		<PackageVersion Include="Microsoft.Extensions.Configuration.Json" Version="$(MicrosoftAspNetCorePackageVersion)" />
 		<PackageVersion Include="Microsoft.Extensions.Options" Version="$(MicrosoftAspNetCorePackageVersion)" />

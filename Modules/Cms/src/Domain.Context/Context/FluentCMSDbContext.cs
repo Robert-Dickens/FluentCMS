@@ -7,6 +7,7 @@ using FluentCMS.Domain.IO;
 using FluentCMS.Domain.Settings;
 using FluentCMS.Domain.Plugins;
 using FluentCMS.Domain.Membership;
+using FluentCMS.Domain.Permissions;
 
 namespace FluentCMS.Domain.Context;
 
@@ -38,6 +39,7 @@ public class FluentCMSDbContext : PlatformDbContext<FluentCMSDbContext>, IFluent
     public DbSet<SettingValuesModel> SettingValues { get; protected set; } = default!;
     public DbSet<UserModel> Users { get; protected set; } = default!;
     public DbSet<UserRoleModel> UserRoles { get; protected set; } = default!;
+    public DbSet<PermissionModel> Permissions { get; protected set; } = default!;
 
     #endregion
 

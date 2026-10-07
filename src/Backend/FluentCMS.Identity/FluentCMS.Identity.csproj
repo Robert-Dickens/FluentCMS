@@ -3,25 +3,18 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageId>FluentCMS.Identity</PackageId>
-    <Version>0.0.1</Version>
-    <Authors>Amir Pournasserian</Authors>
-    <Company>FluentCMS</Company>
-    <Description>Identity.</Description>
-    <PackageTags>fluentcms;cms;identity;core</PackageTags>
-    <RepositoryUrl>https://github.com/fluentcms/FluentCMS</RepositoryUrl>
-    <PackageProjectUrl>https://fluentcms.com</PackageProjectUrl>
-    <PackageIcon>icon.png</PackageIcon>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Repositories\FluentCMS.Repositories.Abstractions\FluentCMS.Repositories.Abstractions.csproj" />
-  </ItemGroup>
 
   <ItemGroup>
-    <None Include="..\..\icon.png" Pack="true" PackagePath="icon.png" />
-    <None Include="README.md" Pack="true" PackagePath="README.md" />
+	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<Using Include="FluentCMS.Domain.Membership" />
+	</ItemGroup>
+
+	<ItemGroup>
+    <ProjectReference Include="..\..\..\Modules\Cms\src\Domain.Abstractions\Cms.Domain.Abstractions.csproj" />
+    <ProjectReference Include="..\..\..\Modules\Cms\src\Domain\Cms.Domain.csproj" />
   </ItemGroup>
 </Project>

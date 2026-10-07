@@ -18,8 +18,8 @@
   </PropertyGroup>
 
 	<ItemGroup>
-    <PackageReference Include="AutoMapper"  />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions"  />
+    <PackageReference Include="AutoMapper" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
     <PackageReference Include="Microsoft.Extensions.Http" />
 	</ItemGroup>
 
@@ -27,12 +27,12 @@
 		<FrameworkReference Include="Microsoft.AspNetCore.App" />
 	</ItemGroup>
 
-	<ItemGroup>
-	  <ProjectReference Include="..\..\FluentCMS.Shared/FluentCMS.Shared.csproj" />
-	</ItemGroup>
-
   <ItemGroup>
     <None Include="..\..\icon.png" Pack="true" PackagePath="icon.png" />
     <None Include="README.md" Pack="true" PackagePath="README.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Modules\Cms\src\Domain.Abstractions\Cms.Domain.Abstractions.csproj" />
   </ItemGroup>
 </Project>

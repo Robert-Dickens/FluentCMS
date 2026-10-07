@@ -3,6 +3,7 @@ using FluentCMS.Domain.Content;
 using FluentCMS.Permissions;
 using Microsoft.AspNetCore.Authorization;
 using System;
+using PageModel = FluentCMS.Domain.Content.PageModel;
 
 namespace FluentCMS.Services.Content;
 

@@ -3,6 +3,9 @@ using FluentCMS.Plugins;
 using FluentCMS.Permissions;
 using Microsoft.AspNetCore.Authorization;
 using System;
+using System.Threading.Tasks;
+using System.Threading;
+using ByteLabs.Foundations.Application.Dtos;
 
 namespace FluentCMS.Services.Plugins;
 
@@ -15,4 +18,13 @@ public class PluginAppService : FluentCMSCrudAppService<PluginModel, Plugin, Gui
         UpdatePolicyName = FluentCMSPermissions.Plugins.Plugin.Edit;
         DeletePolicyName = FluentCMSPermissions.Plugins.Plugin.Delete;
     }
+
+    [Authorize(FluentCMSPermissions.Plugins.Plugin.Create)]
+    public Task<Plugin> InitialCreateAsync(InitialCreateRequest body, CancellationToken cancellationToken = default) => throw new NotImplementedException();
+
+    [Authorize(FluentCMSPermissions.Plugins.Plugin.Edit)]
+    public Task<Plugin> UpdateColsAsync(Guid id, UpdateColsRequest body, CancellationToken cancellationToken = default) => throw new NotImplementedException();
+
+    [Authorize(FluentCMSPermissions.Plugins.Plugin.Edit)]
+    public Task<PagedResultDto<Plugin>> UpdateOrdersAsync(UpdateOrdersRequest body, CancellationToken cancellationToken = default) => throw new NotImplementedException();
 }

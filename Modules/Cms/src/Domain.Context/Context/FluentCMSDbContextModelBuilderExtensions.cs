@@ -5,6 +5,7 @@ using FluentCMS.Domain.ApiTokens;
 using FluentCMS.Domain.Content;
 using FluentCMS.Domain.IO;
 using FluentCMS.Domain.Membership;
+using FluentCMS.Domain.Permissions;
 using FluentCMS.Domain.Plugins;
 using FluentCMS.Domain.Settings;
 using FluentCMS.Membership;
@@ -248,6 +249,15 @@ public static class FluentCMSDbContextModelBuilderExtensions
         builder.Entity<UserRoleModel>(entity =>
         {
             entity.ToTable(FluentCMSDbProperties.DbTablePrefix + "UserRoles", FluentCMSDbProperties.DbSchema);
+            entity.ConfigureByConvention();
+
+            entity.ApplyObjectExtensionMappings();
+        });
+
+
+        builder.Entity<PermissionModel>(entity =>
+        {
+            entity.ToTable(FluentCMSDbProperties.DbTablePrefix + "PermissionModels", FluentCMSDbProperties.DbSchema);
             entity.ConfigureByConvention();
 
             entity.ApplyObjectExtensionMappings();

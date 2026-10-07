@@ -1,7 +1,7 @@
 using ByteLabs.Foundations.Application;
 using ByteLabs.Foundations.Modularity;
-using Microsoft.Extensions.DependencyInjection;
 using FluentCMS.Domain;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace FluentCMS.Services;
 
@@ -17,3 +17,4 @@ public class FluentCMSApplicationModule : PlatformModule
         context.Services.AddMapperlyObjectMapper<FluentCMSApplicationModule>();
     }
 }
+

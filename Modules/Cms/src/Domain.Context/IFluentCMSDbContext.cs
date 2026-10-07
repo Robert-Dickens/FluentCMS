@@ -7,6 +7,7 @@ using FluentCMS.Domain.IO;
 using FluentCMS.Domain.Settings;
 using FluentCMS.Domain.Plugins;
 using FluentCMS.Domain.Membership;
+using FluentCMS.Domain.Permissions;
 
 namespace FluentCMS.Domain
 {
@@ -34,6 +35,7 @@ namespace FluentCMS.Domain
         DbSet<SettingValuesModel> SettingValues { get; }
         DbSet<UserModel> Users { get; }
         DbSet<UserRoleModel> UserRoles { get; }
+        DbSet<PermissionModel> Permissions { get; }
 
     }
 }

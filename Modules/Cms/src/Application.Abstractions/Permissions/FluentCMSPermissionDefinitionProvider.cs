@@ -2,6 +2,7 @@ using ByteLabs.Foundations.Authorization.Permissions;
 using ByteLabs.Foundations.Localization;
 using ByteLabs.Foundations.Reflection;
 using FluentCMS.Localization;
+using System;
 
 namespace FluentCMS.Permissions;
 
@@ -72,6 +73,15 @@ public class FluentCMSPermissions
             public const string Create = Default + ".Create";
             public const string Delete = Default + ".Delete";
         }
+
+        public class Permissions
+        {
+            public const string Default = GroupName + ".Permissions";
+            public const string Edit = Default + ".Edit";
+            public const string Create = Default + ".Create";
+            public const string Delete = Default + ".Delete";
+        }
+
     }
 
     public class ApiTokens
@@ -115,6 +125,14 @@ public class FluentCMSPermissions
         public class Plugin
         {
             public const string Default = GroupName + ".Plugin";
+            public const string Edit = Default + ".Edit";
+            public const string Create = Default + ".Create";
+            public const string Delete = Default + ".Delete";
+        }
+
+        public class PluginDefinitions
+        {
+            public const string Default = GroupName + ".PluginDefinition";
             public const string Edit = Default + ".Edit";
             public const string Create = Default + ".Create";
             public const string Delete = Default + ".Delete";
@@ -171,6 +189,14 @@ public class FluentCMSPermissions
             public const string Create = Default + ".Create";
             public const string Delete = Default + ".Delete";
         }
+
+        public class UserRoles
+        {
+            public const string Default = GroupName + ".UserRoles";
+            public const string Edit = Default + ".Edit";
+            public const string Create = Default + ".Create";
+            public const string Delete = Default + ".Delete";
+        }
     }
 
 }
@@ -191,17 +217,14 @@ public class FluentCMSPermissionDefinitionProvider : PermissionDefinitionProvide
 
     private static void RegisterContentPermissions(PermissionGroupDefinition myGroup)
     {
-        var membershipPermission = myGroup.AddPermission(FluentCMSPermissions.SiteContent.Content.Default, L($"Permission:{FluentCMSPermissions.SiteContent.Content.Default}"));
-        membershipPermission.AddChild(FluentCMSPermissions.SiteContent.Content.Create, L("Permission:Create"));
-        membershipPermission.AddChild(FluentCMSPermissions.SiteContent.Content.Edit, L("Permission:Edit"));
-        membershipPermission.AddChild(FluentCMSPermissions.SiteContent.Content.Delete, L("Permission:Delete"));
-
-        RegisterCrudPermissions(myGroup, FluentCMSPermissions.SiteContent.Blocks.Default);
+        RegisterCrudPermissions(myGroup, FluentCMSPermissions.SiteContent.Content.Default);
         RegisterCrudPermissions(myGroup, FluentCMSPermissions.SiteContent.ContentTypes.Default);
         RegisterCrudPermissions(myGroup, FluentCMSPermissions.SiteContent.ContentTypeFields.Default);
+        RegisterCrudPermissions(myGroup, FluentCMSPermissions.SiteContent.Blocks.Default);
         RegisterCrudPermissions(myGroup, FluentCMSPermissions.SiteContent.Layouts.Default);
         RegisterCrudPermissions(myGroup, FluentCMSPermissions.SiteContent.Pages.Default);
         RegisterCrudPermissions(myGroup, FluentCMSPermissions.SiteContent.Sites.Default);
+        RegisterCrudPermissions(myGroup, FluentCMSPermissions.SiteContent.Permissions.Default);
     }
 
     private static void RegisterApiTokenPermissions(PermissionGroupDefinition myGroup)
@@ -218,6 +241,7 @@ public class FluentCMSPermissionDefinitionProvider : PermissionDefinitionProvide
     private static void RegisterPluginPermissions(PermissionGroupDefinition myGroup)
     {
         RegisterCrudPermissions(myGroup, FluentCMSPermissions.Plugins.Plugin.Default);
+        RegisterCrudPermissions(myGroup, FluentCMSPermissions.Plugins.PluginDefinitions.Default);
         RegisterCrudPermissions(myGroup, FluentCMSPermissions.Plugins.PluginContents.Default);
     }
 
@@ -227,28 +251,24 @@ public class FluentCMSPermissionDefinitionProvider : PermissionDefinitionProvide
         RegisterCrudPermissions(myGroup, FluentCMSPermissions.Settings.TenantSettings.Default);
     }
 
-    private static void RegisterCrudPermissions(PermissionGroupDefinition myGroup, string defaultPermissionName)
+    private static void RegisterMembershipPermissions(PermissionGroupDefinition myGroup)
+    {
+
+        var membershipPermission = RegisterCrudPermissions(myGroup, FluentCMSPermissions.MemberShips.Members.Default);
+        membershipPermission.AddChild(FluentCMSPermissions.MemberShips.Members.ResetPassword, L("Permission:ResetPassword"));
+
+        RegisterCrudPermissions(myGroup, FluentCMSPermissions.MemberShips.Roles.Default);
+        RegisterCrudPermissions(myGroup, FluentCMSPermissions.MemberShips.UserRoles.Default);
+
+    }
+
+    private static PermissionDefinition RegisterCrudPermissions(PermissionGroupDefinition myGroup, string defaultPermissionName)
     {
         var permission = myGroup.AddPermission(defaultPermissionName, L($"Permission:{defaultPermissionName}"));
         permission.AddChild($"{defaultPermissionName}.Create", L("Permission:Create"));
         permission.AddChild($"{defaultPermissionName}.Edit", L("Permission:Edit"));
         permission.AddChild($"{defaultPermissionName}.Delete", L("Permission:Delete"));
-    }
-
-
-    private static void RegisterMembershipPermissions(PermissionGroupDefinition myGroup)
-    {
-        var membershipPermission = myGroup.AddPermission(FluentCMSPermissions.MemberShips.Members.Default, L($"Permission:{FluentCMSPermissions.MemberShips.Members.Default}"));
-        membershipPermission.AddChild(FluentCMSPermissions.MemberShips.Members.Create, L("Permission:Create"));
-        membershipPermission.AddChild(FluentCMSPermissions.MemberShips.Members.Edit, L("Permission:Edit"));
-        membershipPermission.AddChild(FluentCMSPermissions.MemberShips.Members.Delete, L("Permission:Delete"));
-        membershipPermission.AddChild(FluentCMSPermissions.MemberShips.Members.ResetPassword, L("Permission:ResetPassword"));
-
-
-        var rolesPermission = myGroup.AddPermission(FluentCMSPermissions.MemberShips.Roles.Default, L($"Permission:{FluentCMSPermissions.MemberShips.Roles.Default}"));
-        rolesPermission.AddChild(FluentCMSPermissions.MemberShips.Roles.Create, L("Permission:Create"));
-        rolesPermission.AddChild(FluentCMSPermissions.MemberShips.Roles.Edit, L("Permission:Edit"));
-        rolesPermission.AddChild(FluentCMSPermissions.MemberShips.Roles.Delete, L("Permission:Delete"));
+        return permission;
     }
 
     private static LocalizableString L(string name)

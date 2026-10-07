@@ -1,10 +1,11 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using FluentCMS.Membership;
+using Microsoft.AspNetCore.Identity;
 
 namespace FluentCMS.Identity;
 
-public partial class UserStore : IUserTwoFactorRecoveryCodeStore<User>
+public partial class UserStore : IUserTwoFactorRecoveryCodeStore<UserModel>
 {
-    public Task ReplaceCodesAsync(User user, IEnumerable<string> recoveryCodes, CancellationToken cancellationToken)
+    public Task ReplaceCodesAsync(UserModel user, IEnumerable<string> recoveryCodes, CancellationToken cancellationToken)
     {
         var rcs = recoveryCodes.Select(x => new UserTwoFactorRecoveryCode { Code = x, Redeemed = false }).ToList();
         user.RecoveryCodes.Clear();
@@ -12,14 +13,14 @@ public partial class UserStore : IUserTwoFactorRecoveryCodeStore<User>
         return Task.CompletedTask;
     }
 
-    public Task<bool> RedeemCodeAsync(User user, string code, CancellationToken cancellationToken)
+    public Task<bool> RedeemCodeAsync(UserModel user, string code, CancellationToken cancellationToken)
     {
         var rc = user.RecoveryCodes.FirstOrDefault(x => x.Code == code);
         if (rc != null) rc.Redeemed = true;
         return Task.FromResult(true);
     }
 
-    public Task<int> CountCodesAsync(User user, CancellationToken cancellationToken)
+    public Task<int> CountCodesAsync(UserModel user, CancellationToken cancellationToken)
     {
         return Task.FromResult(user.RecoveryCodes.Count);
     }

@@ -2,19 +2,19 @@
 
 namespace FluentCMS.Identity;
 
-public partial class UserStore : IUserPasswordStore<User>
+public partial class UserStore : IUserPasswordStore<UserModel>
 {
-    public Task<string?> GetPasswordHashAsync(User user, CancellationToken cancellationToken)
+    public Task<string?> GetPasswordHashAsync(UserModel user, CancellationToken cancellationToken)
     {
         return Task.FromResult(user.PasswordHash);
     }
 
-    public Task<bool> HasPasswordAsync(User user, CancellationToken cancellationToken)
+    public Task<bool> HasPasswordAsync(UserModel user, CancellationToken cancellationToken)
     {
         return Task.FromResult(user.PasswordHash != null);
     }
 
-    public Task SetPasswordHashAsync(User user, string? passwordHash, CancellationToken cancellationToken)
+    public Task SetPasswordHashAsync(UserModel user, string? passwordHash, CancellationToken cancellationToken)
     {
         user.PasswordHash = passwordHash;
         return Task.CompletedTask;

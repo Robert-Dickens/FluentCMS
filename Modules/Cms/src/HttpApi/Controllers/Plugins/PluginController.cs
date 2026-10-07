@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace FluentCMS.Api.Controllers.Plugins;
 
@@ -34,7 +35,19 @@ public class PluginController : FluentCMSBaseController, IPluginAppService
     [HttpGet]
     public Task<PagedResultDto<Plugin>> GetListAsync(GetPluginRequest input) => _pluginAppService.GetListAsync(input);
 
+    [HttpPost("initial-create")]
+    [Authorize(FluentCMSPermissions.Plugins.Plugin.Create)]
+    public Task<Plugin> InitialCreateAsync(InitialCreateRequest body, CancellationToken cancellationToken = default) => _pluginAppService.InitialCreateAsync( body, cancellationToken);
+
     [HttpPut("{id}")]
     [Authorize(FluentCMSPermissions.Plugins.Plugin.Edit)]
     public Task<Plugin> UpdateAsync(Guid id, PluginUpdateRequest input) => _pluginAppService.UpdateAsync(id, input);
+
+    [HttpPut("{id}/update-columns")]
+    [Authorize(FluentCMSPermissions.Plugins.Plugin.Edit)]
+    public Task<Plugin> UpdateColsAsync(Guid id, UpdateColsRequest body, CancellationToken cancellationToken = default) => _pluginAppService.UpdateColsAsync(id, body, cancellationToken);
+
+    [HttpPut("reorder")]
+    [Authorize(FluentCMSPermissions.Plugins.Plugin.Edit)]
+    public Task<PagedResultDto<Plugin>> UpdateOrdersAsync(UpdateOrdersRequest body, CancellationToken cancellationToken = default) => _pluginAppService.UpdateOrdersAsync(body,cancellationToken);
 }
